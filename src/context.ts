@@ -31,7 +31,7 @@ const parseStringList = (value: string, separators: RegExp): string[] => {
     }
 
     // Case 2: Bracketed list that is not valid JSON, e.g. '[admin]' or '[admin,editor]'
-    const inner = trimmed.replace(/^\[|\]$/g, '').trim();
+    const inner = trimmed.replaceAll(/(?:^\[|\]$)/g, '').trim();
     if (!inner) {
       return [];
     }
