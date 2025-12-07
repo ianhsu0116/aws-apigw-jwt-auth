@@ -1,6 +1,24 @@
-export { configureAuth } from './config';
-export { AuthError, ForbiddenError, UnauthenticatedError } from './errors';
-export type { AnyJwtEvent, HttpJwtEvent, JwtClaims, RestJwtEvent, UserContext, APIGatewayResponse } from './types';
+export {
+  configureAuth,
+  getConfig,
+  resetConfig
+} from './config';
+
+export {
+  AuthError,
+  ForbiddenError,
+  UnauthenticatedError
+} from './errors';
+
+export type {
+  AnyJwtEvent,
+  HttpJwtEvent,
+  JwtClaims,
+  RestJwtEvent,
+  UserContext,
+  APIGatewayResponse
+} from './types';
+
 export {
   buildUserContext,
   hasAnyScope,
@@ -10,6 +28,7 @@ export {
   userInAnyGroup,
   userInGroup,
 } from './context';
+
 export {
   extractHttpClaims,
   extractRestClaims,
