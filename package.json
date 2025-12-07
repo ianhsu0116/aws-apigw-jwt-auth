@@ -1,0 +1,40 @@
+{
+  "name": "aws-apigw-jwt-auth",
+  "version": "0.1.0",
+  "target": "ES2019",
+  "module": "CommonJS",
+  "moduleResolution": "node",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint */*.ts",
+    "test": "jest --coverage --coverageReporters='text-summary' --silent",
+    "coverage": "jest --coverage --coverageReporters=lcov --silent",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianhsu0116/aws-lambda-auth.git"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "auth"
+  ],
+  "author": "Ian Hsu",
+  "license": "MIT",
+  "description": "Helpers for validating JWT claims from AWS API Gateway (HTTP/REST) in Lambda.",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.159",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^24.10.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.9.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
