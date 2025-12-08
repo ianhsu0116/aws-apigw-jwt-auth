@@ -11,6 +11,7 @@ export {
 } from './errors';
 
 export type {
+  AuthConfig,
   AnyJwtEvent,
   HttpJwtEvent,
   JwtClaims,

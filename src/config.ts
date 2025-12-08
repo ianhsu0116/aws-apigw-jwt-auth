@@ -1,7 +1,4 @@
-export type AuthConfig = {
-  groupClaimKey: string;
-  scopeClaimKey: string;
-};
+import { AuthConfig } from './types'
 
 const defaultConfig: AuthConfig = {
   groupClaimKey: 'cognito:groups',

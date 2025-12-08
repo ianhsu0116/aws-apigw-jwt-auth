@@ -5,6 +5,11 @@ import {
   APIGatewayProxyStructuredResultV2,
 } from 'aws-lambda';
 
+export type AuthConfig = {
+  groupClaimKey: string;
+  scopeClaimKey: string;
+};
+
 export type JwtClaims = Record<string, unknown>;
 
 export type RestJwtEvent = APIGatewayProxyWithCognitoAuthorizerEvent;

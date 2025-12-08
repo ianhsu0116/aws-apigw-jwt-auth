@@ -320,6 +320,7 @@ try {
 
 **Types**
 
+- `AuthConfig`
 - `JwtClaims`
 - `RestJwtEvent`
 - `HttpJwtEvent`
