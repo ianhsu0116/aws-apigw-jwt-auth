@@ -1,6 +1,6 @@
 {
   "name": "aws-apigw-jwt-auth",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "target": "ES2019",
   "module": "CommonJS",
   "moduleResolution": "node",
