@@ -1,4 +1,6 @@
-export class AuthError extends Error {
+export abstract class AuthError extends Error {
+  abstract statusCode: number;
+
   constructor(message: string) {
     super(message);
     this.name = 'AuthError';
